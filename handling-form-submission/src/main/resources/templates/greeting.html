@@ -4,12 +4,38 @@
     <title>Getting Started: Handling Form Submission</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
 <body>
-	<h1>Form</h1>
-    <form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post">
-    	<p>Id: <input type="text" th:field="*{id}" /></p>
-        <p>Message: <input type="text" th:field="*{content}" /></p>
-        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+	<h1>Employees()</h1>
+	
+	
+	<a th:href="empedit.html">
+	
+	view</a>
+	<a href="content/result.html">delete</a>
+	
+	<a href="empedit.html">edit</a>
+	
+    <!-- form action="#" th:action="@{/greeting}" th:object="${greeting}" method="post"-->
+    <form>
+    <table style="width:100%">
+    <tr>
+    <th>
+
+    <p>Id:</p></th>
+    
+
+   <th><p>Name:</p></th>
+    <th><p>Title: </p></th>
+    <th><p>Dept:</th>
+      <th>  <p>Message: <!-- input type="text" th:field="*{content}" /--></p></th>
+       <th> <p><input type="submit" value="Create" /> <input type="reset" value="ListAll" /></p></th>
+        </tr>
+        </table>
     </form>
 </body>
 </html>
